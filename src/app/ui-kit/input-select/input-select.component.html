@@ -1,0 +1,18 @@
+<div class="form-group">
+    <label class="control-label">
+       {{label}}
+       <!-- <span class="required-star" *ngIf="isMandatory"> *</span>: -->
+      <!-- <ng-container *ngIf="childRef.invalid && childRef.touched">
+        <span class="help-block error-block" *ngIf="jsonSharedDate!=null"> &nbsp; Invalid</span>
+        <span class="help-block error-block" *ngIf="jsonSharedDate==null && isMandatory && showErrorMessage != false">&nbsp; Required</span>
+      </ng-container> -->
+    </label>
+    <!-- <span *ngIf="toolTip!=''" tooltip="{{toolTip}}" placement="top" show-delay="500" style="margin-left:10px"><i class="fa fa-question-circle"></i></span> -->
+    
+    <div>
+      <select class="form-control" [id]="fieldId" [name]="fieldId" [disabled]="isDisabled"
+      [(ngModel)]="sharedVar" (ngModelChange)="change($event)" [required]="isMandatory" >
+        <option *ngFor="let item of dropdownValues" [ngValue]="item.id" [style.color]="item.id == null?'#999999':''">{{item.text}}</option>
+      </select>
+    </div>
+  </div>
