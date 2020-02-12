@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from '../component/header/header.component';
+import { AuthGuard } from './auth/auth.guard';
 
 export const container = [
     LoginComponent,
@@ -11,7 +12,7 @@ export const container = [
 
 export const routes: Routes = [
     {
-        path: 'portal', component: HomeComponent, 
+        path: 'portal', component: HomeComponent, canActivate: [AuthGuard],
          children: [
             // lazy Routing
             {
