@@ -2,16 +2,23 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { environment } from "../../environments/environment"
+import { map } from 'rxjs/operators';
 
 
 
 @Injectable()
 
-export class ComplaintsService {
+export class ProductsService {
 
-  baseUrl: string = environment.API_BASE_URL;
-
+  //baseUrl: string = environment.API_BASE_URL;
+  baseUrl: string = environment.Product;
   constructor(private httpClient: HttpClient) { }
+  public getProduct(data) {
+    const endpoint = "products.json";
+    return this.httpClient
+      .post(`${this.baseUrl}/${endpoint}`, data)
+      .pipe(map(data => (data)));
+  }
 
 //   getTotalCompliants(): Observable<ComplaintTotal> {
 //     const endpoint = "employ.json";
