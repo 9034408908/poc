@@ -37,8 +37,15 @@
     background-color: #fff;
 }
  */
- #map{
+
+#map {
     height: 500px;
     width: 100%;
     margin-top: 15px;
+}
+
+.prod {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 30px;
 }

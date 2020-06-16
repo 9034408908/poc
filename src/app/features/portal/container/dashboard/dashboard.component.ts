@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import {} from 'googlemaps';
+
 import { FacadeService } from '../../../../services/FacadeService';
 
 @Component({
@@ -8,7 +8,6 @@ import { FacadeService } from '../../../../services/FacadeService';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  public Product:any={};
 
   @ViewChild('mapContainer', { static: false }) gmap: ElementRef;
   map: google.maps.Map;
@@ -16,13 +15,6 @@ export class DashboardComponent implements OnInit {
   constructor(private facadeService: FacadeService) { }
 
   ngOnInit() {}
-
-  public submit(data) {
-this.facadeService.Pross.getProduct(this.Product).subscribe(res=>{
-  this.Product=res;
-  console.log('_____++++',this.Product)
-})
-  }
   
    ngAfterViewInit() {
     this.mapInitializer();

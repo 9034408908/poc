@@ -1,21 +1,41 @@
 <div class="content-wrapper">
-
-      
-        <!-- Main content -->
-        <section class="content">
-          <div class="row">
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
             <div class="box-body">
-                    <p>Main Content</p>
-                    <div #mapContainer id="map"></div>
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <app-input-text [label]="'Remarks'" [fieldId]="'txtRemarks'">
+                        </app-input-text>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <app-input-select [label]="'Days'" [fieldId]="'txtDays'">
+                        </app-input-select>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <label>Product Desc</label>
+                        <input class="form-control" name="productDesc" [(ngModel)]="Product.productDesc">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <label>Product Number</label>
+                        <select class="form-control" name="productnum" [(ngModel)]="Product.productnum">
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                <option>100</option>
+              </select>
+                    </div>
+                </div>
+                <div class="prod">
+                    <button class="btn btn-danger" (click)="submit()">Save</button>
+                </div>
+
             </div>
-          </div>
-        </section>
-        <!-- /.content -->
-      </div>
-      <!-- /.content-wrapper -->
-
-
-
-
-
-
+        </div>
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs/operators';
 import { AuthenticationService } from '../auth/auth.service';
+import { PwaService } from 'src/app/services/pw.service';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,10 @@ export class LoginComponent implements OnInit {
 myForm: FormGroup;
 returnUrl: string;
 data1:any;
+
   constructor( private fb:FormBuilder, private myRoute: Router,
-    private authenticationService: AuthenticationService, private route: ActivatedRoute,) { }
+    private authenticationService: AuthenticationService, private route: ActivatedRoute,
+    public Pwa: PwaService) { }
 
   ngOnInit() {
     this.myForm=this.fb.group({
@@ -27,7 +30,12 @@ data1:any;
   }
 
   get f() { return this.myForm.controls; }
-  
+
+ 
+  installPwa(): void {
+    this.Pwa.promptEvent.prompt();
+  }
+
   public onSubmit(data) {
     debugger;
     this.authenticationService.login(this.f.UserCode.value, this.f.Password.value)

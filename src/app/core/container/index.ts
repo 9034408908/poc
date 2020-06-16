@@ -16,7 +16,7 @@ export const routes: Routes = [
          children: [
             // lazy Routing
             {
-                path: '', loadChildren: '../../features/portal/portal.module#PortalModule'
+                path: '', loadChildren: ()=> import('../../features/portal/portal.module').then(m=>m.PortalModule)
             },
         ]
     },

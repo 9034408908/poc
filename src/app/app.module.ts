@@ -8,6 +8,11 @@ import { AuthenticationService } from './core/container/auth/auth.service';
 import { JWTInterceptor } from './core/container/auth/interceptor';
 import { ProductsService } from './services/product.service';
 import { FacadeService } from './services/FacadeService';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { PwaService } from './services/pw.service';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +22,15 @@ import { FacadeService } from './services/FacadeService';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     AuthenticationService,
     ProductsService,
     FacadeService,
+    PwaService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: JWTInterceptor,

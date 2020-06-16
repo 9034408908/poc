@@ -1,49 +1,73 @@
 <div class="content-wrapper">
-    
+
     <!-- Main content -->
     <section class="content">
-      <div class="row">
-        <div class="box-body">
-                <p>Dashboard Content</p>
-                <div class="col-sm-12 col-md-12 col-xs-12">
+        <div class="row">
+            <div class="box-body">
+
+                <div class="flex-container">
+                    <div>
+                        <mat-card class="prod1">Product Form</mat-card>
+                    </div>
+                    <div>
+                        <mat-card class="prod2">Manage Products</mat-card>
+                    </div>
+                    <div>
+                        <mat-card class="prod3">Create Complaints</mat-card>
+                    </div>
+                    <div>
+                        <mat-card class="prod4">Manage Complaints</mat-card>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 col-sm-12 col-xs-12 status">
+                        <div class="col-md-3 col-sm-6 col-xs-12 mob_headerStatus">
+                            <mat-card>Simple card</mat-card>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 mob_headerStatus">
+                            <mat-card>Simple card</mat-card>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 mob_headerStatus">
+                            <div class="box p-25 btn btn-progress">
+                                <div class="text-center">
+                                    <h1 class="countnm font-size-50 m-0">Manage Order</h1>
+                                    <div class="text-uppercase">Security Deposit</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 mob_headerStatus">
+                            <div class="box p-25 btn btn-progress">
+                                <div class="text-center">
+                                    <h1 class="countnm font-size-50 m-0">Manage Order</h1>
+                                    <div class="text-uppercase">Security Deposit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                <div class="chart col-sm-12 col-md-12 col-xs-12">
                     <div class="col-sm-6 col-md-6 col-xs-12">
-                  <app-input-text  [label]="'Remarks'" [fieldId]="'txtRemarks'">
-                  </app-input-text>
-                </div>
-                  <div class="col-sm-6 col-md-6 col-xs-12">
-                  <app-input-select  [label]="'Days'" [fieldId]="'txtDays'">
-                  </app-input-select>
-                </div>
+                        <app-bar-chart></app-bar-chart>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <app-doughnut-chart></app-doughnut-chart>
+                    </div>
                 </div>
 
-                <div class="col-sm-12 col-md-12 col-xs-12">
-                  <div class="col-sm-6 col-md-6 col-xs-12">
-                    <label>Product Desc</label>
-                <input class="form-control" name="productDesc" [(ngModel)]="Product.productDesc">
-              </div>
-                <div class="col-sm-6 col-md-6 col-xs-12">
-                    <label>Product Number</label>
-                    <select class="form-control" name="productnum" [(ngModel)]="Product.productnum">
-                    <option>10</option>
-                    <option>20</option>
-                    <option>50</option>
-                    <option>100</option>
-                  </select>
-              </div>
-              </div>
-              <div class="prod">
-              <button class="btn btn-danger" (click)="submit()">Save</button>
-            </div>
+                <!-- <div class="col-sm-12 col-md-12 col-xs-12">
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <app-doughnut-chart></app-doughnut-chart>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-12">
+                        <app-doughnut-chart></app-doughnut-chart>
+                    </div>
+                </div> -->
+
+
                 <div #mapContainer id="map"></div>
+            </div>
+
         </div>
-      </div>
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-
-
-
-
-
+</div>
+<!-- /.content-wrapper -->

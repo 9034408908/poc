@@ -1,28 +1,45 @@
 <div class="top-head">
-  <button class="btn btn-danger" (click)="logout()">Logout</button>
-</div>
-  
-  <div class="page-sidebar">
-    <div class="sidebar-inner force-overflow" id="main-menu-wrapper">
-      <div class="profile-info row short-profile">
-          <p>SideBar</p>
-      </div>
-  
-      <ul class="wraplist">
-        <li class="menuLi"><a routerLink="/portal/home"><span
-              class="menu-title">Home</span></a></li>
-        <li class="menuLi"><a routerLink="/portal/producr"> 
-            <span class="menu-title">Manage Products</span></a></li>
-        <li class="menuLi"><a routerLink="/portal/product-details">
-            <span class="menu-title">Manage Orders</span></a></li>
-     
-      </ul>
+    <div class="logo-area col-sm-6 col-md-6 col-xs-6">
+        <img class="logo img-responsive" src="assets/images/logo.png" width="100px" alt="">
+        <!-- <img class="logo img-responsive" src="assets/images/logo-white.png" alt=""> -->
     </div>
-  </div>
+    <!-- <button *ngIf="Pwa.promptEvent" (click)="installPwa()">
+        Install
+      </button> -->
+    <button class="btn btn-danger" (click)="logout()">Logout</button>
+</div>
 
-  <section id="main-content" class="sidebar_shift">
+<div class="page-sidebar">
+    <div class="sidebar-inner force-overflow" id="main-menu-wrapper">
+        <div class="profile-info row short-profile">
+            <!-- <p>SideBar</p> -->
+        </div>
+
+        <ul class="wraplist">
+            <li class="menuLi">
+                <a routerLink="/portal/home">
+                    <span class="icon"><i class="material-icons">home</i></span><span class="menu-title">Home</span></a>
+            </li>
+            <li class="menuLi">
+                <a routerLink="/portal/producr"><span class="icon"><i class="material-icons">picture_in_picture_alt</i></span>
+                    <span class="menu-title">Manage Products</span></a>
+            </li>
+            <li class="menuLi">
+                <a routerLink="/portal/product-details"><span class="icon"><i class="material-icons">receipt</i></span>
+                    <span class="menu-title">Manage Orders</span></a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="mob-menu">
+
+</div> -->
+
+<section id="main-content" class="sidebar_shift">
     <section class="wrapper main-wrapper row">
-      <router-outlet></router-outlet>
-      <!-- <app-footer></app-footer> -->
+        <router-outlet></router-outlet>
+        <!-- <app-footer></app-footer> -->
     </section>
-  </section>
+</section>
