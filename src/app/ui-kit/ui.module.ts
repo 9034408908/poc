@@ -15,7 +15,6 @@ import {
   MatTooltipModule,
   MatRadioModule, MatPaginatorModule, MatExpansionModule, MatSelectModule, MatTreeModule, MatDatepickerModule, MatCardModule
 } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 const IMPORT_EXPORT = [
   CommonModule,
@@ -45,8 +44,7 @@ const IMPORT_EXPORT = [
   MatExpansionModule,
   MatTreeModule,
   MatDatepickerModule,
-  MatCardModule,
-  FlexLayoutModule
+  MatCardModule
   
 ];
 
