@@ -8,7 +8,12 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "postinstall": "ng build --prod"
+        "postinstall": "ng build --prod",
+        "ngsw-config": "node_modules/.bin/ngsw-config dist src/ngsw-config.json",
+        "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js dist/my-app/",
+        "build-prod-ngsw": "ng build --prod && npm run ngsw-config && npm run ngsw-copy",
+        "serve-prod-ngsw": "npm run build-prod-ngsw && process.env.PORT || 8080"
+
     },
     "engines": {
         "node": "12.16.1",
