@@ -9,7 +9,7 @@ import { FacadeService } from '../../../../services/FacadeService';
 })
 export class DashboardComponent implements OnInit {
 
-  @ViewChild('mapContainer', { static: false }) gmap: ElementRef;
+  @ViewChild('mapContainer') gmap: ElementRef;
   map: google.maps.Map;
 
   constructor(private facadeService: FacadeService) { }
