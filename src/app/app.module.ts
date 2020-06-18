@@ -24,7 +24,7 @@ import { PwaService } from './services/pw.service';
     CoreModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, scope: './', registrationStrategy: 'registerImmediately'  })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     AuthenticationService,
