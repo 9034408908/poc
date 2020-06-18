@@ -22,7 +22,6 @@ export class AuthenticationService {
    // 'https://login-a678d.firebaseio.com/details.json'
 
     login(userCode: string, password: string) {
-        debugger;
         return this.http.post<any>(`${environment.LogIn}/details.json`, { userCode, password})
             .pipe(map(data => {
 
