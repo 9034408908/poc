@@ -11,14 +11,14 @@ import { map } from 'rxjs/operators';
 export class ProductsService {
 
   //baseUrl: string = environment.API_BASE_URL;
-  baseUrl: string = environment.Product;
-  constructor(private httpClient: HttpClient) { }
-  public getProduct(data) {
-    const endpoint = "products.json";
-    return this.httpClient
-      .post(`${this.baseUrl}/${endpoint}`, data)
-      .pipe(map(data => (data)));
-  }
+  // baseUrl: string = environment.Product;
+  // constructor(private httpClient: HttpClient) { }
+  // public getProduct(data) {
+  //   const endpoint = "products.json";
+  //   return this.httpClient
+  //     .post(`${this.baseUrl}/${endpoint}`, data)
+  //     .pipe(map(data => (data)));
+  // }
 
 //   getTotalCompliants(): Observable<ComplaintTotal> {
 //     const endpoint = "employ.json";

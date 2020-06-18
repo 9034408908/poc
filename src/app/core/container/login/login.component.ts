@@ -1,8 +1,8 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { first } from 'rxjs/operators';
-import { AuthenticationService } from '../auth/auth.service';
+// import { first } from 'rxjs/operators';
+// import { AuthenticationService } from '../auth/auth.service';
 import { PwaService } from 'src/app/services/pw.service';
 
 @Component({
@@ -12,11 +12,11 @@ import { PwaService } from 'src/app/services/pw.service';
 })
 export class LoginComponent implements OnInit {
 myForm: FormGroup;
-returnUrl: string;
+// returnUrl: string;
 data1:any;
-
+// private authenticationService: AuthenticationService, 
   constructor( private fb:FormBuilder, private myRoute: Router,
-    private authenticationService: AuthenticationService, private route: ActivatedRoute,
+    private route: ActivatedRoute,
     public Pwa: PwaService) { }
 
   ngOnInit() {
@@ -25,11 +25,11 @@ data1:any;
     Password: ['', [Validators.required]]
     });
 
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    // this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
     
   }
 
-  get f() { return this.myForm.controls; }
+  // get f() { return this.myForm.controls; }
 
  
   installPwa(): void {
@@ -37,17 +37,18 @@ data1:any;
   }
 
   public onSubmit(data) {
-    debugger;
-    this.authenticationService.login(this.f.UserCode.value, this.f.Password.value)
-      .pipe(first()).subscribe(data => {
-        console.log('----+++',this.myForm.value)
-        this.myRoute.navigate(['/portal/home']);
-      })
-    }
-    //this.data1.push(this.myForm.value)
-  //  if (this.myForm.valid) {
-  //   console.log('----+++',data)
-  //   this.myRoute.navigate(['/portal/home']);
-  //  }
+
+    // this.authenticationService.login(this.f.UserCode.value, this.f.Password.value)
+    //   .pipe(first()).subscribe(data => {
+    //     console.log('----+++',this.myForm.value)
+    //     this.myRoute.navigate(['/portal/home']);
+    //   })
+    // }
+    // this.data1.push(this.myForm.value)
+   if (this.myForm.valid) {
+    console.log('----+++',data)
+    this.myRoute.navigate(['/portal/home']);
+   }
+  }
 
 }

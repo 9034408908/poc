@@ -13,8 +13,8 @@ export class ProducrComponent implements OnInit {
   ngOnInit() {
    }
    public submit() {
-    this.facadeService.Pross.getProduct(this.Product).subscribe(res=>{
-      this.Product=res;
-    })
+    // this.facadeService.Pross.getProduct(this.Product).subscribe(res=>{
+    //   this.Product=res;
+    // })
       }
 }
