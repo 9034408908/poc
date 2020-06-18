@@ -1,0 +1,104 @@
+{
+  "configVersion": 1,
+  "timestamp": 1592480200293,
+  "index": "https://github.com/9034408908/poc.git/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/9034408908/poc.git/5-es2015.c56f33ee3be65dcf9fa8.js",
+        "https://github.com/9034408908/poc.git/5-es5.c56f33ee3be65dcf9fa8.js",
+        "https://github.com/9034408908/poc.git/favicon.ico",
+        "https://github.com/9034408908/poc.git/index.html",
+        "https://github.com/9034408908/poc.git/main-es2015.6665a3d9102a0a6add95.js",
+        "https://github.com/9034408908/poc.git/main-es5.6665a3d9102a0a6add95.js",
+        "https://github.com/9034408908/poc.git/manifest.webmanifest",
+        "https://github.com/9034408908/poc.git/polyfills-es2015.f2c5ab749249a66bdf26.js",
+        "https://github.com/9034408908/poc.git/polyfills-es5.049f620af8c864cf4d88.js",
+        "https://github.com/9034408908/poc.git/runtime-es2015.d598ee5799251aecb467.js",
+        "https://github.com/9034408908/poc.git/runtime-es5.d598ee5799251aecb467.js",
+        "https://github.com/9034408908/poc.git/styles.46b64cd62da430c2fe33.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/9034408908/poc.git/assets/icons/icon-128x128.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-144x144.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-152x152.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-192x192.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-384x384.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-512x512.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-72x72.png",
+        "https://github.com/9034408908/poc.git/assets/icons/icon-96x96.png",
+        "https://github.com/9034408908/poc.git/assets/images/bg.jpg",
+        "https://github.com/9034408908/poc.git/assets/images/light-1282314_1920.jpg",
+        "https://github.com/9034408908/poc.git/assets/images/logo.png",
+        "https://github.com/9034408908/poc.git/assets/images/water-2748640_1920.png",
+        "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
+        "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
+        "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
+        "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
+        "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
+        "https://github.com/9034408908/poc.git/water-2748640_1920.2fea089255785b13dc1b.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://github.com/9034408908/poc.git/5-es2015.c56f33ee3be65dcf9fa8.js": "d4fe41e2d07287b905b77919710f8a8c3ee3a01f",
+    "https://github.com/9034408908/poc.git/5-es5.c56f33ee3be65dcf9fa8.js": "07dd0b83e0bbdba9a0aafc9e4870db6dfe5fdec7",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://github.com/9034408908/poc.git/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://github.com/9034408908/poc.git/assets/images/bg.jpg": "f19f307e142d9e8c94cd804f851a7c37f19c02ba",
+    "https://github.com/9034408908/poc.git/assets/images/light-1282314_1920.jpg": "50287da5c159aa1de8e28f127262aebbd8409d2c",
+    "https://github.com/9034408908/poc.git/assets/images/logo.png": "9ce277b412f9c446ffe63cb3fffa138ec06f09fa",
+    "https://github.com/9034408908/poc.git/assets/images/water-2748640_1920.png": "1e86657e820ee854d5a5c304ccdd462eb08129f2",
+    "https://github.com/9034408908/poc.git/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg": "de51a8494180a6db074af2dee2383f0a363c5b08",
+    "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf": "44bc1850f570972267b169ae18f1cb06b611ffa2",
+    "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.5be1347c682810f199c7.eot": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3",
+    "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f",
+    "https://github.com/9034408908/poc.git/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2": "ca35b697d99cae4d1b60f2d60fcd37771987eb07",
+    "https://github.com/9034408908/poc.git/index.html": "bd6d8a4e36b1cd67ab011fb890622024584c5d44",
+    "https://github.com/9034408908/poc.git/main-es2015.6665a3d9102a0a6add95.js": "df1130522e5438d850281c095ed41314aa95a5f7",
+    "https://github.com/9034408908/poc.git/main-es5.6665a3d9102a0a6add95.js": "9f68b2bffc8a9454be7adf8144edfad9be8b2717",
+    "https://github.com/9034408908/poc.git/manifest.webmanifest": "180f0859c0f98940902c3e674316464567ecfe49",
+    "https://github.com/9034408908/poc.git/polyfills-es2015.f2c5ab749249a66bdf26.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "https://github.com/9034408908/poc.git/polyfills-es5.049f620af8c864cf4d88.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
+    "https://github.com/9034408908/poc.git/runtime-es2015.d598ee5799251aecb467.js": "85cf32339887610ddfdb22f94d16af4eef9bd372",
+    "https://github.com/9034408908/poc.git/runtime-es5.d598ee5799251aecb467.js": "2382540d39418fc3a6efb3ef94afe66244f553a4",
+    "https://github.com/9034408908/poc.git/styles.46b64cd62da430c2fe33.css": "00cd113de6844ede5cc4e4feec73053944e17dfb",
+    "https://github.com/9034408908/poc.git/water-2748640_1920.2fea089255785b13dc1b.png": "1e86657e820ee854d5a5c304ccdd462eb08129f2"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
