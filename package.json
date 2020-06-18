@@ -8,7 +8,10 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "postinstall": "ng build --prod"
+        "postinstall": "ng build --prod",
+        "ngsw-config": "node_modules/.bin/ngsw-config dist src/ngsw-config.json",
+        "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js dist/",
+        "build-prod-ngsw": "ng build --prod && npm run ngsw-config && npm run ngsw-copy"
     },
     "engines": {
         "node": "12.16.1",
@@ -18,10 +21,10 @@
     "dependencies": {
         "@angular/animations": "~9.1.11",
         "@angular/cdk": "~8.2.3",
-        "@angular/common": "~9.1.11",
         "@angular/cli": "^9.1.8",
-        "@angular/compiler-cli": "^9.1.11",
+        "@angular/common": "~9.1.11",
         "@angular/compiler": "~9.1.11",
+        "@angular/compiler-cli": "^9.1.11",
         "@angular/core": "~9.1.11",
         "@angular/forms": "~9.1.11",
         "@angular/material": "^8.2.3",
