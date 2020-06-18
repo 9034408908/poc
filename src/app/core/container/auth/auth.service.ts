@@ -21,34 +21,34 @@ export class AuthenticationService {
 
    // 'https://login-a678d.firebaseio.com/details.json'
 
-    // login(userCode: string, password: string) {
-    //     debugger;
-    //     return this.http.post<any>(`${environment.LogIn}/details.json`, { userCode, password})
-    //         .pipe(map(data => {
+    login(userCode: string, password: string) {
+        debugger;
+        return this.http.post<any>(`${environment.LogIn}/details.json`, { userCode, password})
+            .pipe(map(data => {
 
-    //             const user: User = new User();
-    //             user.userCode = data.userCode;
-    //             user.password = data.password;
+                const user: User = new User();
+                user.userCode = data.userCode;
+                user.password = data.password;
 
-    //             localStorage.setItem('currentUser', JSON.stringify(data));
-    //             this.currentUserSubject.next(user);
-    //             return user;
-    //         }
+                localStorage.setItem('currentUser', JSON.stringify(data));
+                this.currentUserSubject.next(user);
+                return user;
+            }
 
-    //         ));
-    // }
+            ));
+    }
 
-    // logout() {
-    //     // remove user from local storage to log user out
-    //     localStorage.removeItem('currentUser');
-    //     this.currentUserSubject.next(null);
-    // }
+    logout() {
+        // remove user from local storage to log user out
+        localStorage.removeItem('currentUser');
+        this.currentUserSubject.next(null);
+    }
 
-    // isLoggedIn() {
-    //     if (this.currentUserSubject.value != null) {
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
+    isLoggedIn() {
+        if (this.currentUserSubject.value != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
